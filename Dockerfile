@@ -20,7 +20,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 RUN useradd -m -s /bin/bash rtbot
 
-RUN wget https://raw.githubusercontent.com/zzvvmm/init-vip-go-ci/main/tools-init.sh -O tools-init.sh && \
+RUN wget https://raw.githubusercontent.com/glc-grp/action-phpcs-code-review/master/tools-init.sh -O tools-init.sh && \
 	bash tools-init.sh && \
 	rm -f tools-init.sh
 
